@@ -25,7 +25,15 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:id="@+id/date"
-        tools:text="26 feb, 2020"
+        tools:text="abc"
+        tools:ignore="Suspicious0dp" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/time"
+        tools:text="3.00"
         tools:ignore="Suspicious0dp" />
 
 </LinearLayout>

@@ -2,6 +2,7 @@ package com.example.quakereport;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
@@ -18,14 +19,8 @@ public class EarthquakeActivity extends AppCompatActivity {
         setContentView(R.layout.earthquake_activity);
 
 
-        ArrayList<Earthquake> earthquakes = new ArrayList<Earthquake>();
-        earthquakes.add(new Earthquake("7.2","San Francisco","June 21, 2020"));
-        earthquakes.add(new Earthquake("7.2","London","June 21, 2020"));
-        earthquakes.add(new Earthquake("7.2","Tokyo","June 21, 2020"));
-        earthquakes.add(new Earthquake("7.2","Mexico City","June 21, 2020"));
-        earthquakes.add(new Earthquake("7.2","Moscow","June 21, 2020"));
-        earthquakes.add(new Earthquake("7.2","Rio de Janeiro","June 21, 2020"));
-        earthquakes.add(new Earthquake("7.2","Paris","June 21, 2020"));
+        ArrayList<Earthquake> earthquakes = QueryUtils.extractEarthquakes();
+
 
 
         EarthquakeAdapter adapter = new EarthquakeAdapter(this, earthquakes);
