@@ -1,10 +1,10 @@
 package com.example.quakereport;
 
 public class Earthquake {
-    private double mMagnitude;
-    private String mLocation;
-    private long mTimeInMilliseconds;
-    private String mUrl;
+    private final double mMagnitude;
+    private final String mLocation;
+    private final long mTimeInMilliseconds;
+    private final String mUrl;
 
     public Earthquake(double magnitude,String location, long timeInMilliseconds, String url){
         mMagnitude = magnitude;

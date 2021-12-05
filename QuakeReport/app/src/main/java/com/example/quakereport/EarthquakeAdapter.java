@@ -1,22 +1,20 @@
 package com.example.quakereport;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
+import android.graphics.drawable.GradientDrawable;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.graphics.drawable.GradientDrawable;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.core.content.ContextCompat;
 
 import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.List;
 
 public class EarthquakeAdapter extends ArrayAdapter<Earthquake> {
     public EarthquakeAdapter(Context context, ArrayList<Earthquake> earthquakes){
@@ -52,21 +50,21 @@ public class EarthquakeAdapter extends ArrayAdapter<Earthquake> {
         } else {
             locationOffset = getContext().getString(R.string.near_the);
             primaryLocation = originalLocation;
-        }TextView primaryLocationView = (TextView) listItemView.findViewById(R.id.primary_location);
+        }TextView primaryLocationView = listItemView.findViewById(R.id.primary_location);
         primaryLocationView.setText(primaryLocation);
 
-        TextView locationOffsetView = (TextView) listItemView.findViewById(R.id.location_offset);
+        TextView locationOffsetView = listItemView.findViewById(R.id.location_offset);
         locationOffsetView.setText(locationOffset);
 
         Date dateObject = new Date(currentEarthquake.getTimeInMilliseconds());
-        TextView dateView = (TextView) listItemView.findViewById(R.id.date);
+        TextView dateView = listItemView.findViewById(R.id.date);
         // Format the date string (i.e. "Mar 3, 1984")
         String formattedDate = formatDate(dateObject);
         // Display the date of the current earthquake in that TextView
         dateView.setText(formattedDate);
 
         // Find the TextView with view ID time
-        TextView timeView = (TextView) listItemView.findViewById(R.id.time);
+        TextView timeView = listItemView.findViewById(R.id.time);
         // Format the time string (i.e. "4:30PM")
         String formattedTime = formatTime(dateObject);
         // Display the time of the current earthquake in that TextView
@@ -78,11 +76,11 @@ public class EarthquakeAdapter extends ArrayAdapter<Earthquake> {
         return magnitudeFormat.format(magnitude);
     }
     private String formatDate(Date dateObject) {
-        SimpleDateFormat dateFormat = new SimpleDateFormat("LLL dd, yyyy");
+        @SuppressLint("SimpleDateFormat") SimpleDateFormat dateFormat = new SimpleDateFormat("LLL dd, yyyy");
         return dateFormat.format(dateObject);
     }
     private String formatTime(Date dateObject) {
-        SimpleDateFormat timeFormat = new SimpleDateFormat("h:mm a");
+        @SuppressLint("SimpleDateFormat") SimpleDateFormat timeFormat = new SimpleDateFormat("h:mm a");
         return timeFormat.format(dateObject);
     }
     private int getMagnitudeColor(double magnitude) {
