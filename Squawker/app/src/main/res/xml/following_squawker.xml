@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreferenceCompat
+        android:defaultValue="@bool/follow_default_message_subscription"
+        android:key="@string/follow_key_switch_asser"
+        android:summaryOff="@string/follow_summary_not_following"
+        android:summaryOn="@string/follow_summary_following"
+        android:title="@string/follow_title_switch_asser" />
+
+    <SwitchPreferenceCompat
+        android:defaultValue="@bool/follow_default_message_subscription"
+        android:key="@string/follow_key_switch_cezanne"
+        android:summaryOff="@string/follow_summary_not_following"
+        android:summaryOn="@string/follow_summary_following"
+        android:title="@string/follow_title_switch_cezanne" />
+
+    <SwitchPreferenceCompat
+        android:defaultValue="@bool/follow_default_message_subscription"
+        android:key="@string/follow_key_switch_jlin"
+        android:summaryOff="@string/follow_summary_not_following"
+        android:summaryOn="@string/follow_summary_following"
+        android:title="@string/follow_title_switch_jlin" />
+
+    <SwitchPreferenceCompat
+        android:defaultValue="@bool/follow_default_message_subscription"
+        android:key="@string/follow_key_switch_lyla"
+        android:summaryOff="@string/follow_summary_not_following"
+        android:summaryOn="@string/follow_summary_following"
+        android:title="@string/follow_title_switch_lyla" />
+
+    <SwitchPreferenceCompat
+        android:defaultValue="@bool/follow_default_message_subscription"
+        android:key="@string/follow_key_switch_nikita"
+        android:summaryOff="@string/follow_summary_not_following"
+        android:summaryOn="@string/follow_summary_following"
+        android:title="@string/follow_title_switch_nikita" />
+
+
+
+
+</PreferenceScreen>

@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/GitManagement/AppPrac/QuakeReport/app/src/main/res/layout/earthquake_activity.xml" value="0.27447916666666666" />
+        <entry key="..\:/GitManagement/AppPrac/QuakeReport/app/src/main/res/layout/earthquake_list_item.xml" value="0.26403985507246375" />
+        <entry key="..\:/GitManagement/AppPrac/QuakeReport/app/src/main/res/xml/settings_main.xml" value="0.27447916666666666" />
         <entry key="..\:/LAPTOP/APPS/QuakeReport/app/src/main/res/drawable/ic_filter.xml" value="0.15260416666666668" />
         <entry key="..\:/LAPTOP/APPS/QuakeReport/app/src/main/res/drawable/magnitude_circle.xml" value="0.15625" />
         <entry key="..\:/LAPTOP/APPS/QuakeReport/app/src/main/res/layout/activity_settings.xml" value="0.13645833333333332" />
